@@ -17,13 +17,11 @@
       </div>
       <div class="row" id="contentDiv">
         <div class="col-md-6" id="textDiv">
-          <p>It's big, it's blue, it's...</p>
-          <br/>
-          <p><strong>BlewJeens</strong></p>
+          <%= yield_content :copy %>
         </div>
         <div class="col-md-6" id="imgDiv">
           <div class="imgWrapper">
-            <img src="img/jean.png" height="400px" width="200px"></img>
+            <%= yield_content :img %>
           </div>
         </div>
       </div>
